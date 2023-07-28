@@ -1,0 +1,31 @@
+/*
+Theme Name: Seasons
+Theme URI: 
+Author: courane01
+Author URI: https://courtneyr.dev
+Description: Seasons
+Requires at least: 5.8
+Tested up to: 6.3-alpha-55652
+Requires PHP: 5.7
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: 
+Text Domain: seasons
+Tags: full-site-editing, editor-style, block-styles, block-patterns
+*//* Styles intended only for the front.*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

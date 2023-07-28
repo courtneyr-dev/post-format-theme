@@ -1,0 +1,53 @@
+{
+	"name": "seasons",
+	"version": "1.0.0",
+	"description": "Seasons theme description",
+	"author": "courane01",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Theme",
+		"Post Formats",
+		"Blog"
+	],
+	"homepage": "https://courtneyr.dev/seasons",
+	"devDependencies": {
+		"@babel/cli": "^7.21.0",
+		"@babel/core": "^7.21.4",
+		"@babel/preset-env": "^7.21.4",
+		"@babel/preset-react": "^7.18.6",
+		"@wordpress/babel-preset-default": "^7.10.0",
+		"@wordpress/eslint-plugin": "^13.10.0",
+		"@wordpress/scripts": "^26.2.0",
+		"@wordpress/stylelint-config": "^21.9.0",
+		"babel-loader": "^9.1.2",
+		"cssnano": "^5.1.14",
+		"eslint": "^8.33.0",
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-cli": "^2.3.0",
+		"gulp-concat-css": "^3.1.0",
+		"gulp-cssnano": "^2.1.3",
+		"gulp-rename": "^2.0.0",
+		"postcss": "^8.4.21",
+		"postcss-cli": "^10.1.0",
+		"prettier": "^2.8.3",
+		"stylelint": "^14.16.1",
+		"webpack": "^5.81.0",
+		"webpack-cli": "^5.0.2"
+	},
+	"scripts": {
+		"lint:css": "stylelint **/*.css",
+		"lint-fix:css": "stylelint **/*.css --fix",
+		"lint:js": "eslint .",
+		"lint-fix:js": "eslint --fix .",
+		"build": "webpack --mode production",
+		"start": "wp-scripts start",
+		"build:js": "babel blocks/block-script.js --out-file blocks/block-script-transpiled.js"
+	},
+	"main": "gulpfile.js",
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
+}

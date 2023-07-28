@@ -1,0 +1,57 @@
+/*
+ * CSS for registered block styles.
+ * See inc/register-block-styles.php.
+ */
+
+/* Flat button */
+.is-style-seasons-flat-button .wp-block-button__link,
+.is-style-seasons-flat-button .wp-block-button__link:hover,
+.is-style-seasons-flat-button .wp-block-button__link:focus,
+.is-style-seasons-flat-button .wp-block-button__link:active,
+.is-style-seasons-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Menu button style */
+.is-style-seasons-navigation-button button.wp-block-navigation__responsive-container-close,
+.is-style-seasons-navigation-button button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: var(--wp-preset-shadow--natural);
+}
+
+.is-style-seasons-navigation-button button.wp-block-navigation__responsive-container-close:hover,
+.is-style-seasons-navigation-button button.wp-block-navigation__responsive-container-open:hover,
+.is-style-seasons-navigation-button button.wp-block-navigation__responsive-container-close:focus,
+.is-style-seasons-navigation-button button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--contrast);
+	box-shadow: var(--wp-preset-shadow--natural);
+	border: 2px solid var(--wp--preset--color--secondary);
+}
+
+/* Box shadow */
+.is-style-seasons-box-shadow {
+	box-shadow: var(--wp-preset-shadow--natural);
+}
+
+/* Lists */
+.is-style-seasons-list-underline li {
+	border-bottom: 1px solid currentcolor;
+}
+
+.is-style-seasons-list-underline ul {
+	border-top: 1px solid currentcolor;
+}
+
+.is-style-seasons-list-underline ul li {
+	border: none;
+}
